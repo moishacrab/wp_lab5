@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задание 20</title>
+  <script>
+    let count = +prompt("Количество чисел")
+    let numbers = []
+    for (let i = 0; i < count; i++) {
+      numbers[i] = +prompt("Число " + (i + 1))
+    }
+    let min = numbers[0]
+    for (let i = 0; i < numbers.length; i++) {
+      if (min > numbers[i]) {
+        min = numbers[i]
+      }
+    }
+    document.write(`<p>Значення ${numbers.toString()}<br>Мінімальне ${min} </p>`)
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
